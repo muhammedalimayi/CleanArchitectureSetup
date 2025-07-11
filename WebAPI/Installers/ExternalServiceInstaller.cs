@@ -20,6 +20,7 @@ public static class ExternalServiceInstaller
                 .Expand()
                 .OrderBy()
                 .SetMaxTop(null)
+                //.EnableQueryFeatures() //Bu yukarıdakilerin tümünü içerir
                 .AddRouteComponents("odata", AppODataController.GetEdmModel()) // OData model binding added
 
         );
